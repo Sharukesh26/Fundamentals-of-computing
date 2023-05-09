@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int sum = 0, n =12;
+   for (int i = 1; i <= n; i++)
+      sum += (2 * i) * (2 * i);
+   cout <<"Sum of first "<<n<<" natural numbers is "<<sum;
+   return 0;
+}
