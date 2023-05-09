@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("enter a integer:");
+	scanf("%d",&a);
+	if(a%2==0)
+	printf("the respective number is even");
+	if(a%5==0)
+	printf("the respective number is divisible by 5");
+	if(a%10==0)
+	printf("the respective number is divisible 10");
+	else
+	printf("the respective number is odd");
+	return 0;
+}
