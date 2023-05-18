@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+int main ()
+
+{
+
+	static void swapThree(ref int a,						ref int b,
+
+						ref int c)
+
+	{
+
+		b = a - (b + c);
+
+		c = a - (b + c);
+
+		a = a - (b + c);
+
+	}
+
+	static void Main(String []args)
+
+	{
+
+		
+
+		int a = 10, b = 20, c = 30;
+
+		Console.WriteLine("Before swapping a = " +
+
+								a + ", b = " + b +
+
+									", c = " + c);
+
+							
+
+		swapThree(ref a, ref b,ref c);
+
+		Console.Write("After swapping a = " +
+
+						a + ", b = " + b +
+
+							", c = " + c);
+
+	}
+
+}
